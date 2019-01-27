@@ -2,5 +2,10 @@ image: alpine:latest
 
 ix_tests:
   script:
-  - echo "Hello iX"
+  - echo "Running iX tests"
   - exit 1
+
+ix_build:
+  script:
+  - echo "Running iX build"
+  - exit 0
