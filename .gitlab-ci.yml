@@ -1,16 +1,24 @@
 image: alpine:latest
 
+stages:
+  - build
+  - test
+  - package
+
 ix_build:
+  stage: build
   script:
   - echo "Running iX build"
   - exit 1
 
 ix_tests:
+  stage: test
   script:
   - echo "Running iX tests"
   - exit 0
 
 ix_package:
+  stage: package
   script:
   - echo "Running iX package"
   - exit 0
